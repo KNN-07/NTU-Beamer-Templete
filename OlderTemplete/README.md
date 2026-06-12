@@ -1,5 +1,8 @@
 # NTU Classic Beamer Theme
 
+> **Unofficial:** This community template is not affiliated with, maintained
+> by, or endorsed by Nanyang Technological University.
+
 An NTU-branded Beamer theme using the official NTU Blue from
 `../NTUBrandingGuide.md`.
 
@@ -32,3 +35,11 @@ Chinese can be mixed directly into an English slide:
   {\kaishu 南洋理工大学欢迎您。}
 \end{frame}
 ```
+
+## Demo Images
+
+These previews are rendered directly from `slide.pdf`.
+
+![Title slide](demo/front.png)
+![English and Chinese support](demo/bilingual.png)
+![Graphics and columns](demo/graphics.png)

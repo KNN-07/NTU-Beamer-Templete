@@ -1,5 +1,8 @@
 # NTU Beamer Template
 
+> **Unofficial:** This community template is not affiliated with, maintained
+> by, or endorsed by Nanyang Technological University.
+
 An NTU-branded Beamer template using the official NTU Blue from
 `../NTUBrandingGuide.md`.
 

@@ -1,5 +1,9 @@
 # NTU Beamer Templates
 
+> [!IMPORTANT]
+> This is an unofficial community project. It is not affiliated with,
+> maintained by, or endorsed by Nanyang Technological University.
+
 Two Beamer presentation templates adapted for Nanyang Technological University
 (NTU), using a navy-forward palette based on the included
 [NTU branding guide](NTUBrandingGuide.md).
@@ -37,6 +41,8 @@ Use the theme in a presentation with:
 The classic template uses Beamer's smooth navigation bar and a denser academic
 layout. Its sample content is written in English, while Chinese typesetting
 remains supported through `ctex`.
+
+![Classic template preview](OlderTemplete/demo/front.png)
 
 Source and rendered example:
 

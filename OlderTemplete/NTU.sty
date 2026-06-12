@@ -1,3 +1,5 @@
+\ProvidesPackage{NTU}[2026/06/12 NTU beamer theme]
+
 \mode<presentation>
 
 \newif\ifbeamer@secheader
@@ -36,10 +38,12 @@
 %\useoutertheme{default}
 %\useinnertheme[shadow=true]{rounded}
 
-\xdefinecolor{tsinghua}{rgb}{0.455,0.204,0.506}  %RGB#82318E
-\setbeamercolor{footline}{bg=tsinghua}
-\setbeamercolor{frametitle}{bg=tsinghua,fg=white}
-\setbeamercolor{title}{bg=tsinghua}
+\xdefinecolor{ntublue}{RGB}{24,28,98}        % NTU Blue, HEX #181C62
+\xdefinecolor{ntubrightblue}{RGB}{0,84,166}  % Secondary bright blue, HEX #0054A6
+\xdefinecolor{ntugrey}{RGB}{140,140,140}     % Grey 55%, HEX #8C8C8C
+\setbeamercolor{footline}{bg=ntublue}
+\setbeamercolor{frametitle}{bg=ntublue,fg=white}
+\setbeamercolor{title}{bg=ntublue}
 \setbeamerfont{frametitle}{size=\large}
 %\setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{bibliography item}[text]
@@ -53,8 +57,8 @@
 \setbeamercolor{titlelike}{parent=palette primary}
 
 %% try
-\setbeamercolor{block title}{bg=tsinghua,fg=white}
-\setbeamercolor*{block title example}{use={normal text,example text},bg=white,fg=tsinghua}
+\setbeamercolor{block title}{bg=ntublue,fg=white}
+\setbeamercolor*{block title example}{use={normal text,example text},bg=white,fg=ntublue}
 \setbeamercolor{fine separation line}{}
 \setbeamercolor{item projected}{fg=white}
 \setbeamercolor{palette sidebar primary}{use=normal text,fg=normal text.fg}
@@ -62,14 +66,14 @@
 \setbeamercolor{palette sidebar secondary}{use=structure,fg=structure.fg}
 \setbeamercolor{palette sidebar tertiary}{use=normal text,fg=normal text.fg}
 %\setbeamercolor{palette sidebar quaternary}{fg=white}
-\setbeamercolor{section in sidebar}{fg=brown}
-\setbeamercolor{section in sidebar shaded}{fg=grey}
+\setbeamercolor{section in sidebar}{fg=ntublue}
+\setbeamercolor{section in sidebar shaded}{fg=ntugrey}
 \setbeamercolor{separation line}{}
-\setbeamercolor{sidebar}{bg=tsinghua}
+\setbeamercolor{sidebar}{bg=ntublue}
 \setbeamercolor{sidebar}{parent=palette primary}
-\setbeamercolor{structure}{fg=tsinghua}
-\setbeamercolor{subsection in sidebar}{fg=brown}
-\setbeamercolor{subsection in sidebar shaded}{fg=grey}
+\setbeamercolor{structure}{fg=ntublue}
+\setbeamercolor{subsection in sidebar}{fg=ntubrightblue}
+\setbeamercolor{subsection in sidebar shaded}{fg=ntugrey}
 \AtBeginSection[]{
 	\begin{frame}
 		\tableofcontents[sectionstyle=show/shaded,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]

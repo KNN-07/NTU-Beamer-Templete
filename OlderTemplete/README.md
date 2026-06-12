@@ -1,9 +1,34 @@
-# THU-Beamer-Theme
+# NTU Classic Beamer Theme
 
-最初能追溯到的版本是 [https://www.latexstudio.net/archives/4051.html](https://www.latexstudio.net/archives/4051.html)
+An NTU-branded Beamer theme using the official NTU Blue from
+`../NTUBrandingGuide.md`.
 
-我在16年的时候魔改了一发，20年的时候小修了一下，变成现在这样
+## Usage
 
-Overleaf模板位于：[https://www.overleaf.com/latex/templates/thu-beamer-theme/vwnqmzndvwyb](https://www.overleaf.com/latex/templates/thu-beamer-theme/vwnqmzndvwyb)，可以直接点开
+The sample presentation and documentation are written in English. Chinese text
+remains supported through `ctex`.
 
-其中的教程部分参考了大鹰团长的介绍：[https://tuna.moe/event/2018/latex/](https://tuna.moe/event/2018/latex/)
+Compile with XeLaTeX:
+
+```sh
+xelatex slide.tex
+```
+
+LuaLaTeX can also be used. pdfLaTeX remains available for English-only decks,
+but it does not provide the template's Chinese text support.
+
+The theme entry point is:
+
+```tex
+\usepackage{NTU}
+```
+
+Chinese can be mixed directly into an English slide:
+
+```tex
+\begin{frame}{English and Chinese}
+  English text
+
+  {\kaishu 南洋理工大学欢迎您。}
+\end{frame}
+```

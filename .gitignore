@@ -1,0 +1,22 @@
+# LaTeX build output
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.pdf
+!ModernTemplete/beamerntu.pdf
+!OlderTemplete/slide.pdf
+!OlderTemplete/pic/dtmf.pdf
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+
+# OS metadata
+.DS_Store
+Thumbs.db

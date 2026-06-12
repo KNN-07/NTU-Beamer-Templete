@@ -1,1 +1,3 @@
 *.pdf
+!slide.pdf
+!pic/dtmf.pdf

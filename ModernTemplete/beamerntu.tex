@@ -1,0 +1,144 @@
+\documentclass{beamer}
+\usepackage{amsfonts,amsmath}
+\usetheme{ntu}
+
+\usefonttheme[onlymath]{serif}
+
+\titlebackground*{assets/background}
+
+\newcommand{\hrefcol}[2]{\textcolor{ntubrightblue}{\href{#1}{#2}}}
+\newcommand{\testcolor}[1]{\colorbox{#1}{\textcolor{#1}{test}}~\texttt{#1}}
+
+\title{NTU Beamer Theme}
+\subtitle{Nanyang Technological University}
+\course{Presentation Template}
+\author{Author Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{frame}{About This Template}
+\begin{itemize}
+\item Uses NTU Blue as the primary theme color.
+\item Uses the supplied NTU logo asset in headers and title backgrounds.
+\item Keeps the presentation system navy-first, with secondary accents in the blue family.
+\item Designed for XeLaTeX or pdfLaTeX workflows.
+\end{itemize}
+\end{frame}
+
+\section{Getting Started}
+
+\begin{frame}[fragile]{Minimum Document}
+\begin{block}{NTU Beamer Document}
+\begin{verbatim}
+\documentclass{beamer}
+\usetheme{ntu}
+
+\title{Presentation Title}
+\author{Author Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{frame}{Hello, NTU}
+  Slide content goes here.
+% close the frame and document as usual
+\end{verbatim}
+\end{block}
+\end{frame}
+
+\begin{frame}[fragile]{Title Background}
+Set a title background before \verb|\maketitle|:
+\begin{block}{Background Commands}
+\begin{verbatim}
+\titlebackground{assets/background}
+\titlebackground*{assets/background}
+\end{verbatim}
+\end{block}
+The starred version clips the image into a split view on the right side of the
+title slide.
+\end{frame}
+
+\section{Brand Colors}
+
+\footlinecolor{ntubrightblue}
+\begin{frame}[fragile]{Changing Slide Style}
+\begin{itemize}
+\item Select the white or navy slide style in the preamble with
+\verb|\themecolor{white}| or \verb|\themecolor{main}|.
+\item Change the footline color before a frame with \verb|\footlinecolor{color}|.
+\item Useful NTU colors include \testcolor{maincolor}, \testcolor{ntubrightblue},
+\testcolor{ntumediumblue}, \testcolor{ntulightblue}, and \testcolor{ntuteal}.
+\end{itemize}
+\end{frame}
+
+\footlinecolor{}
+\begin{frame}[fragile]{Blocks}
+\begin{columns}
+\begin{column}{0.36\textwidth}
+\begin{block}{Standard Block}
+Standard blocks use the current theme color.
+\begin{verbatim}
+\begin{block}{title}
+content...
+\end{block}
+\end{verbatim}
+\end{block}
+\end{column}
+\begin{column}{0.58\textwidth}
+\begin{colorblock}[black]{ntulightblue}{Color Block}
+Color blocks let you pick a background color while keeping the same shape.
+\scriptsize
+\begin{verbatim}
+\begin{colorblock}[black]{ntulightblue}{title}
+content...
+\end{colorblock}
+\end{verbatim}
+\end{colorblock}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Math and Lists}
+\begin{itemize}[<+->]
+\item Beamer supports overlays for step-by-step explanations.
+\item Mathematical notation works as usual:
+\begin{equation*}
+\mathrm{i}\hbar\frac{\partial}{\partial t}\Psi(\mathbf{r},t)=
+-\frac{\hbar^2}{2m}\nabla^2\Psi(\mathbf{r},t)+V(\mathbf{r})\Psi(\mathbf{r},t)
+\end{equation*}
+\item Use \texttt{\textbackslash alert\{...\}} to emphasize a \alert{specific point}.
+\end{itemize}
+\end{frame}
+
+\section{Special Slides}
+
+\begin{chapter}[assets/chapter_panel]{}{Chapter Slide}
+\begin{itemize}
+\item Use chapter slides to separate major sections.
+\item Optional background images can be split onto the right.
+\end{itemize}
+\end{chapter}
+
+\footlinecolor{ntuteal}
+\begin{sidepic}{assets/sidepic_panel}{Side-Picture Slide}
+\begin{itemize}
+\item Use \texttt{sidepic} when a visual should fill the right side.
+\item The content area remains on the left.
+\end{itemize}
+\end{sidepic}
+
+\footlinecolor{}
+\section{Summary}
+
+\begin{frame}{Good Luck}
+\begin{itemize}
+\item The theme entry point is \texttt{\textbackslash usetheme\{ntu\}}.
+\item The color package is \texttt{ntucolor}.
+\item The logo asset is \texttt{assets/NTU\_Logo.png}.
+\end{itemize}
+\end{frame}
+
+\backmatter
+\end{document}

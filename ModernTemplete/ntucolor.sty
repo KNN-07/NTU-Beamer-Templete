@@ -1,0 +1,29 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ntucolor}[2026/06/12]
+
+\RequirePackage{xcolor}
+
+% NTU corporate palette from NTUBrandingGuide.md.
+\definecolor{maincolor}{RGB/cmyk}{24,28,98/100,95,5,40}
+
+% Greys
+\definecolor{ntugrey}{RGB/cmyk}{230,230,230/0,0,0,.1}
+\definecolor{ntumidgrey}{RGB/cmyk}{200,200,200/0,0,0,.25}
+\definecolor{ntudarkgrey}{RGB/cmyk}{140,140,140/0,0,0,.55}
+\colorlet{ntugray}{ntugrey}
+\colorlet{ntumidgray}{ntumidgrey}
+\colorlet{ntudarkgray}{ntudarkgrey}
+
+% Blue-forward secondary palette
+\definecolorset{RGB/cmyk}{ntu}{}{brightblue, 0,84,166/100,75,0,0;%
+                                 mediumblue, 27,117,188/86,50,0,0;%
+                                 lightblue, 93,169,221/60,20,0,0;%
+                                 teal, 50,188,173/70,0,40,0}
+
+% Supporting colours
+\definecolorset{RGB/cmyk}{ntu}{}{green, 7,177,82/80,0,95,0;%
+                                 darkgreen, 0,124,72/100,10,90,26;%
+                                 yellow, 255,221,0/0,10,100,0}
+
+\colorlet{ntulightgrey}{ntugrey}
+\colorlet{ntulightgray}{ntugrey}

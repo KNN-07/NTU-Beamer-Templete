@@ -76,6 +76,11 @@ The templates use NTU Blue (`#181C62`) as their primary color and include
 standard and reversed NTU logo assets. See
 [`NTUBrandingGuide.md`](NTUBrandingGuide.md) for the palette and usage notes.
 
+The repository-level logo sources are available as
+[`NTU_Logo.svg`](NTU_Logo.svg), [`NTU_Logo.webp`](NTU_Logo.webp), and
+[`NTU_Logo.png`](NTU_Logo.png). The SVG is retained as the editable vector
+source for future template and asset updates.
+
 NTU names, logos, and marks belong to Nanyang Technological University. Their
 inclusion in this repository does not imply official endorsement.
 
